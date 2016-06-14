@@ -20,5 +20,10 @@ module Pushrr
       domain = get("v1/domains/#{token}")
       new domain
     end
+
+    def self.create(attributes)
+      domain = post('v1/domains', attributes)
+      new domain
+    end
   end
 end

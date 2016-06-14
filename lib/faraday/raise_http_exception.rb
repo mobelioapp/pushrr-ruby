@@ -9,6 +9,8 @@ module FaradayMiddleware
           raise Pushrr::Unauthorized
         when 404
           raise Pushrr::NotFound
+        when 400
+          raise Pushrr::BadRequest, error_message_400(response)
         end
       end
     end
@@ -16,6 +18,12 @@ module FaradayMiddleware
     def initialize(app)
       super app
       @parser = nil
+    end
+
+    private
+
+    def error_message_400(response)
+      "#{response[:method].to_s.upcase} #{response[:url].to_s}: #{response[:status]} #{response[:body]}"
     end
   end
 end

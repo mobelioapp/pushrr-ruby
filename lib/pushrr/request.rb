@@ -7,6 +7,15 @@ module Pushrr
       conn.get(uri).body
     end
 
+    def post(url, attributes)
+      response = conn.post(url) do |request|
+        request.headers['Content-Type'] = 'application/json'
+        request.body = attributes.to_json
+      end
+
+      response.body
+    end
+
     private
 
     def conn

@@ -9,8 +9,8 @@ describe Pushrr::Domain do
     end
 
     it { expect(@domains.length).to eq 3 }
-    it { expect(@domains).to be_kind_of Array }
-    it { expect(@domains.sample).to be_kind_of Pushrr::Domain }
+    it { expect(@domains).to be_a Array }
+    it { expect(@domains.sample).to be_a Pushrr::Domain }
   end
 
   context '#find' do
@@ -20,6 +20,16 @@ describe Pushrr::Domain do
         @domain = Pushrr::Domain.find(token)
       end
     end
-    it { expect(@domain).to be_kind_of Pushrr::Domain }
+    it { expect(@domain).to be_a Pushrr::Domain }
+  end
+
+  context '#create' do
+    before do
+      VCR.use_cassette 'new_domain' do
+        @domain = Pushrr::Domain.create(host: 'uniq.com')
+      end
+    end
+
+    it { expect(@domain).to be_a Pushrr::Domain }
   end
 end
