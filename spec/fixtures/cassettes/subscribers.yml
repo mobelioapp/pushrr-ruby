@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/domains/93159b0efc2c83b87fed4af06b8236f5/subscribers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Token fafeffe6bf3c294bb7f52fc4c47a22fa
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"d85ae7d03daa57d5024933960f547903"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a1dbed56-9c00-4a87-9e29-880565a79571
+      X-Runtime:
+      - '0.066844'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.3.0/2015-12-25)
+      Date:
+      - Tue, 14 Jun 2016 12:20:21 GMT
+      Content-Length:
+      - '121'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":19,"country":"United States","country_code":"US","browser":"chrome","created_at":"2016-06-12T08:13:55.901+05:45"}]'
+    http_version: 
+  recorded_at: Tue, 14 Jun 2016 12:20:21 GMT
+recorded_with: VCR 3.0.3
