@@ -1,5 +1,7 @@
-require "pushrr/version"
+require 'farday'
+
+require 'pushrr/version'
+require 'pushr/error'
 
 module Pushrr
-  # Your code goes here...
 end
