@@ -1,7 +1,9 @@
-require 'farday'
+require 'faraday'
 
 require 'pushrr/version'
-require 'pushr/error'
+require 'pushrr/error'
+require 'pushrr/request'
+require 'pushrr/domain'
 
 module Pushrr
 end
