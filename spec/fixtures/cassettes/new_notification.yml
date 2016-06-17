@@ -31,17 +31,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"2b2af730f99ace00523ab6af3d2e2294"
+      - W/"3bd86c95310ab0e38b753c8caec357e7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2ece8a9f-8dbf-4507-a470-60c3c4b84c9a
+      - 3cc38779-2b06-4e28-8675-4a972ea8f596
       X-Runtime:
-      - '2.762394'
+      - '0.027101'
       Server:
       - WEBrick/1.3.1 (Ruby/2.3.0/2015-12-25)
       Date:
-      - Wed, 15 Jun 2016 14:22:07 GMT
+      - Fri, 17 Jun 2016 04:59:09 GMT
       Content-Length:
       - '266'
       Connection:
@@ -50,7 +50,7 @@ http_interactions:
       - request_method=POST; path=/
     body:
       encoding: UTF-8
-      string: '{"id":105,"domain":"pushrr.io","title":"title","text":"text","url":"google.com","token":"c28c1ff33a9c1ed2ee6009a1f3f6adad","icon":"/assets/pushrr-logo-1c2413def9c65db7d73d05149ad93fdaa3d319e87da2b45798a06e455da82a48.png","created_at":"2016-06-15T20:07:07.114+05:45"}'
+      string: '{"id":107,"domain":"pushrr.io","title":"title","text":"text","url":"google.com","token":"86b3a7119a7556c56aaaa7320709742d","icon":"/assets/pushrr-logo-1c2413def9c65db7d73d05149ad93fdaa3d319e87da2b45798a06e455da82a48.png","created_at":"2016-06-17T10:44:09.491+05:45"}'
     http_version: 
-  recorded_at: Wed, 15 Jun 2016 14:22:07 GMT
+  recorded_at: Fri, 17 Jun 2016 04:59:09 GMT
 recorded_with: VCR 3.0.3

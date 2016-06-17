@@ -5,7 +5,7 @@ describe Pushrr::Subscriber do
     before do
       VCR.use_cassette 'subscribers' do
         domain_token = '93159b0efc2c83b87fed4af06b8236f5'
-        domain = Pushrr::Domain.new(token: domain_token)
+        domain = Pushrr::Domain.find(domain_token)
         @subscribers = Pushrr::Subscriber.all(domain)
       end
     end

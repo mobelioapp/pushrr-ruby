@@ -5,8 +5,8 @@ module Pushrr
     attr_accessor :id, :host, :token, :status, :logo,
       :welcome_notificaton, :confirmed_at, :created_at
 
-    def initialize(attributes)
-      attributes.each do |key, value|
+    def initialize(attrs)
+      attrs.each do |key, value|
         instance_variable_set("@#{key}", value)
       end
     end

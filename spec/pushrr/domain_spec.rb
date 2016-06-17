@@ -8,7 +8,7 @@ describe Pushrr::Domain do
       end
     end
 
-    it { expect(@domains.length).to eq 3 }
+    it { expect(@domains.length).to eq 10 }
     it { expect(@domains).to be_a Array }
     it { expect(@domains.sample).to be_a Pushrr::Domain }
   end

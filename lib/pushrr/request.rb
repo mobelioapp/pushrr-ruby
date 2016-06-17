@@ -13,7 +13,7 @@ module Pushrr
         request.body = attributes.to_json
       end
 
-      response.body
+      response.body.inject({}){ |memo,(k,v)| memo[k.to_sym] = v; memo }
     end
 
     private

@@ -31,17 +31,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ac92ea1c9022c6b1a622f842a95f89de"
+      - W/"c483211c82abdbd33b5b0fec4fb8170a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d1bfd054-3962-4093-8b17-1bdb2e28f5b5
+      - debc6892-85e7-4553-a49f-e914a2dd7e1a
       X-Runtime:
-      - '0.120199'
+      - '0.075344'
       Server:
       - WEBrick/1.3.1 (Ruby/2.3.0/2015-12-25)
       Date:
-      - Tue, 14 Jun 2016 12:04:06 GMT
+      - Fri, 17 Jun 2016 04:59:09 GMT
       Content-Length:
       - '212'
       Connection:
@@ -50,7 +50,7 @@ http_interactions:
       - request_method=POST; path=/
     body:
       encoding: UTF-8
-      string: '{"id":12,"host":"uniq.com","token":"5a261eaedd7543287215bbd1b68281d7","status":"inactive","logo":"/images/missing.png","welcome_notification":true,"confirmed_at":null,"created_at":"2016-06-14T17:49:06.206+05:45"}'
+      string: '{"id":14,"host":"uniq.com","token":"02269713e992cd95d04b7083b65d2c14","status":"inactive","logo":"/images/missing.png","welcome_notification":true,"confirmed_at":null,"created_at":"2016-06-17T10:44:09.384+05:45"}'
     http_version: 
-  recorded_at: Tue, 14 Jun 2016 12:04:06 GMT
+  recorded_at: Fri, 17 Jun 2016 04:59:09 GMT
 recorded_with: VCR 3.0.3

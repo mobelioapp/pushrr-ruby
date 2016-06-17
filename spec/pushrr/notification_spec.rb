@@ -13,7 +13,7 @@ describe Pushrr::Notification do
       end
     end
 
-    it { expect(@notification.count).to eq 57 }
+    it { expect(@notification.count).to eq 7 }
     it { expect(@notification).to be_a Array }
     it { expect(@notification.sample).to be_a Pushrr::Notification }
   end

@@ -5,13 +5,9 @@ module Pushrr
     attr_reader :id, :domain, :title, :text, :url, :token, :created_at
 
     def initialize(attrs)
-      @id         = attrs['id']
-      @domain     = attrs['domain']
-      @title      = attrs['title']
-      @text       = attrs['text']
-      @url        = attrs['url']
-      @token      = attrs['token']
-      @created_at = attrs['created_at']
+      attrs.each do |key, value|
+        instance_variable_set("@#{key}", value)
+      end
     end
 
     def self.all(domain)
