@@ -22,14 +22,13 @@ describe Pushrr::Notification do
     before do
       VCR.use_cassette 'new_notification' do
         params = {
-          domain: @domain,
           title:  'title',
           text:   'text',
           url:    'google.com',
           country_codes: ['ID']
         }
 
-        @notification = Pushrr::Notification.create(params)
+        @notification = Pushrr::Notification.create(@domain, params)
       end
     end
 

@@ -15,12 +15,12 @@ module Pushrr
       subscribers.map { |subscriber| new subscriber }
     end
 
-    def self.create(opts={})
+    def self.create(domain, opts={})
       params = {
         title:          opts[:title],
         text:           opts[:text],
         url:            opts[:url],
-        subscriber_ids: opts[:subscribers].map { |s| s.id },
+        subscriber_ids: opts[:subscribers]&.map { |s| s.id },
         country_codes:  opts[:country_codes]
       }
 
