@@ -15,13 +15,13 @@ module Pushrr
       subscribers.map { |subscriber| new subscriber }
     end
 
-    def self.create(domain:, title:, text:, url:, subscribers: [], country_codes: [])
+    def self.create(opts={})
       params = {
-        title: title,
-        text:  text,
-        url:   url,
-        subscriber_ids: subscribers.map { |s| s.id },
-        country_codes: country_codes
+        title:          opts[:title],
+        text:           opts[:text],
+        url:            opts[:url],
+        subscriber_ids: opts[:subscribers].map { |s| s.id },
+        country_codes:  opts[:country_codes]
       }
 
       notification = post("v1/domains/#{domain.token}/notifications", params)
